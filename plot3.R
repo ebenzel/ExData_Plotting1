@@ -10,7 +10,7 @@ data <- select(data, -Time)
 
 ## Create plot
 png("plot3.png", width = 480, height = 480)
-plot(data$Date, data$Sub_metering_1, type = "l", ylab = "Energy sub metering", )
+plot(data$Date, data$Sub_metering_1, type = "l", xlab = "", ylab = "Energy sub metering", )
 points(data$Date, data$Sub_metering_2, col = "Red", type = "l")
 points(data$Date, data$Sub_metering_3, col = "Blue", type = "l")
 legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col = c("Black", "Red", "Blue"), lwd = 1)
